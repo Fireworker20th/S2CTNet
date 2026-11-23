@@ -42,4 +42,4 @@ These screenshots serve as supplementary evidence of the quantitative performanc
 
 ## 6. Acknowledgements
 
-We sincerely thank the authors of [SEA-RAFT](https://github.com/princeton-vl/SEA-RAFT) for providing their excellent open-source implementation, which serves as the evaluation framework for our method.
+We sincerely thank the authors of SEA-RAFT for providing their excellent open-source implementation, which serves as the evaluation framework for our method.
