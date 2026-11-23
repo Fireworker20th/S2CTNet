@@ -1,45 +1,8 @@
-# Evaluation Instructions
+# S2CTNet-SAM-guided-Semantic-Conv-Transformer-Network-for-Event-Segmentation
+<p align="center">
+   <img src="overview_v2.png" width=800>
+</p>
 
-## 1. Code and Model Availability
+We propose a joint cross-modal and cross-model distillation framework for event-based semantic segmentation. Using SAM as a teacher, we distill multi-level RGB spatial features into an event backbone via feature-level alignment, enabling effective knowledge transfer from vision foundation models to event-based systems.
 
-Since our manuscript is currently under review, we are temporarily unable to release the source code of the distillation process to protect our ongoing research. However, to facilitate the evaluation and verification of our method, we provide the pretrained model weights (`final.pth`) for testing.
-
-## 2. Environment Setup
-
-First, navigate to the `SEA-RAFT-main` directory and configure the environment by following the official installation instructions provided by SEA-RAFT.
-
-## 3. Model Weights and Test Data
-
-We provide the following files for evaluation:
-
-- **Model weights:** `final.pth`
-- **Test data:** Test sequences are provided in this repository for visualization and qualitative evaluation.
-
-Place the `final.pth` file in the `SEA-RAFT-main` directory, or modify the model path in the following command accordingly.
-
-## 4. Running the Evaluation
-
-After completing the environment setup, run the following command from the `SEA-RAFT-main` directory:
-
-```bash
-python flow_inf.py \
-    --cfg config/eval/kitti-M.json \
-    --path /home/djy/project/SEA-RAFT-main/final.pth \
-    --test/
-```
-
-Please replace the model path with the actual location of your `final.pth` file if necessary.
-
-After execution, the program will generate visualized optical flow estimation results on the provided test sequences.
-
-## 5. Performance Evaluation
-
-Due to the file size limitations of the supplementary materials, we are unable to include the complete test split of the dataset for quantitative evaluation.
-
-Nevertheless, for reference and verification, we provide screenshots of our performance results obtained from the official DSEC evaluation platform in the `output` directory.
-
-These screenshots serve as supplementary evidence of the quantitative performance reported in our manuscript.
-
-## 6. Acknowledgements
-
-We sincerely thank the authors of SEA-RAFT for providing their excellent open-source implementation, which serves as the evaluation framework for our method.
+We will release the code upon acceptance.
